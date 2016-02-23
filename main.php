@@ -4,14 +4,22 @@ if(isset($_COOKIE["user"])){
 	$username = $_COOKIE["user"];
 }
 ?>
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="ISO-8859-1">
-		<title>Hello <?php echo($username);?>!</title>
-	</head>
+
+<div class="container">
+	<?php 
+	echo file_get_contents("head.php");
+	?>
+	<?php 
+	echo file_get_contents("header.php");
+	?>
 	
-	<body>
-	Hello <?php echo($username);?>!
-	</body>
-</html>
+	
+	<h1>Hello <?php echo ($username);?>!</h1>
+	
+	<?php
+	echo file_get_contents("pagefooter.php");
+	?>
+	<?php
+	echo file_get_contents("footer.php");
+	?>
+</div>
