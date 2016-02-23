@@ -1,11 +1,11 @@
 <?php
 
 // Database Details
-define('SERVERNAME','localhost');
+define('SERVERNAME','mysql15.unoeuro.com');
 define('SERVERPORT','3306');
-define('DBUSERNAME','root');  // Replace root with your database username. If unsure, leave as is.
-define('DBPASSWORD','root');	// Replace root with your database user password.
-define('DBNAME','YOUR_DB'); 	//Create a new database qwench on your server and replace YOUR_DB with it's name
+define('DBUSERNAME','classmate_dk');  // Replace root with your database username. If unsure, leave as is.
+define('DBPASSWORD','classmate2016');	// Replace root with your database user password.
+define('DBNAME','classmate_dk_db'); 	//Create a new database qwench on your server and replace YOUR_DB with it's name
 
 Define('ANSWERS_PER_PAGE','10');
 define('QUESTIONS_PER_PAGE','10');
@@ -28,7 +28,7 @@ date_default_timezone_set("Asia/Calcutta");
 // If you have installed Qwench in your
 // root folder then set
 // define('BASE_DIR','');
-define('BASE_DIR','/qwench');
+define('BASE_DIR','');
 
 // If URL-Rewriting does not work then set
 // define('BASE_PATH',BASE_DIR.'/index.php');
