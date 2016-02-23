@@ -1,4 +1,4 @@
-<div class="col-sm-12">
+
 	<h2>Log in</h2>	
 	<form action="login.php" method="post" class="login-form">
 	
@@ -29,7 +29,6 @@
 			echo("No user named ".$_COOKIE["user"]); 
 		}?>
 	</div>
-</div>
 
 
 	
