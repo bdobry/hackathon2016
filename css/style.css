@@ -57,3 +57,11 @@ body {
     font-size: 18px;
     line-height: 20px;
 }
+
+.question{
+  width: 400px;
+  height:70px;
+  background-color: lightblue;
+  margin-bottom: 20px;
+  padding: 15;
+}
