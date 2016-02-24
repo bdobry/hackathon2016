@@ -1,7 +1,6 @@
-	<?php
-	
+<?php
 	echo file_get_contents("head.php");
-	?>
+?>
 
 <img src="images/grey-bg.jpg" alt="Background image" class="bg">
 	<div class="container">

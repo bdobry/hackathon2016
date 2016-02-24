@@ -106,3 +106,28 @@ a .categoryiconwrap{
 .no-mg-top{
 	margin-top: 0px;
 }
+
+.reply {
+    padding: 10px;
+    border-left: 4px solid #00AAFF;
+}
+
+.vote{
+	cursor: pointer;
+}
+
+.vote.downvote:hover{
+	color: #DA8886;
+}
+
+.vote.upvote:hover{
+	color: #71A071;
+}
+
+.vote.downvote.on{
+	color: #d9534f;
+}
+
+.vote.upvote.on{
+	color: #449d44;
+}
