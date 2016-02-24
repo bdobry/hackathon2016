@@ -15,11 +15,9 @@ if(isset($_COOKIE["user"])){
 <    <div class="container">
 
         <!-- Jumbotron Header -->
-        <header class="jumbotron hero-spacer">
-            <h1>A Warm Welcome!</h1>
+        <header class="jumbotron spacer">
+            <h1>Welcome to Classmate</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-            <p><a class="btn btn-primary btn-large">Call to action!</a>
-            </p>
         </header>
 
         <hr>
@@ -27,7 +25,7 @@ if(isset($_COOKIE["user"])){
         <!-- Title -->
         <div class="row">
             <div class="col-lg-12">
-                <h3>Latest Features</h3>
+                <h3>Categories</h3>
             </div>
         </div>
         <!-- /.row -->
@@ -35,59 +33,51 @@ if(isset($_COOKIE["user"])){
         <!-- Page Features -->
         <div class="row text-center">
 
-            <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="col-md-4 col-sm-6 feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="col-sm-12 categoryiconwrap">
+	                    <i class="fa fa-pencil fa-5x"></i>
+	                </div>
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3>Styling</h3>
+                        <p>CSS, LESS, Scss anything related to styling</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-success">See questions</a>
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="col-md-4 col-sm-6 feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="col-sm-12 categoryiconwrap">
+	                    <i class="fa fa-code fa-5x"></i>
+	                </div>
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3>Coding</h3>
+                        <p>Anything code/programming related</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-success">See questions</a>
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="col-md-4 col-sm-6 feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+	                <div class="col-sm-12 categoryiconwrap">
+	                    <i class="fa fa-coffee fa-5x"></i>
+	                </div>
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3>Off topic</h3>
+                        <p>Anything really</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-success">See questions</a>
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
         <!-- /.row -->
 
         <hr>

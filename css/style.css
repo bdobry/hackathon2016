@@ -75,14 +75,20 @@ body {
 
 }
 
-.hero-spacer {
+.spacer {
     margin-top: 50px;
 }
 
-.hero-feature {
+.feature {
     margin-bottom: 30px;
 }
 
 footer {
     margin: 50px 0;
+}
+
+.categoryiconwrap{
+	padding: 40px 0;
+    background-color: #bdbdbd;
+    margin-bottom: 30px;
 }
