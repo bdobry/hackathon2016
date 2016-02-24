@@ -1,8 +1,17 @@
 <?php
+
 $username = "Stranger";
 if(isset($_COOKIE["user"])){
 	$username = $_COOKIE["user"];
 }
+?>
+
+<?php
+    session_start();
+    if(!isset($_SESSION["isAuthenticated"]) || !$_SESSION["isAuthenticated"]){
+        header("location: /hackathon2016/index.php");
+        exit;
+    }
 ?>
 
 	<?php 
