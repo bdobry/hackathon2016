@@ -22,7 +22,7 @@
                     </li>
                     <li>
                         <form action="logout.php" method="post">
-                            <input class="btn btn-success" type="submit" value="Logout">
+                            <input class="btn btn-danger" type="submit" value="Logout">
                         </form>
                     </li>
                 </ul>
