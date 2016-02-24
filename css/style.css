@@ -117,17 +117,17 @@ a .categoryiconwrap{
 }
 
 .vote.downvote:hover{
-	color: red;
+	color: #DA8886;
 }
 
 .vote.upvote:hover{
-	color: green;
+	color: #71A071;
 }
 
 .vote.downvote.on{
-	color: red;
+	color: #d9534f;
 }
 
 .vote.upvote.on{
-	color: green;
+	color: #449d44;
 }
