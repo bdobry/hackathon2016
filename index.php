@@ -1,4 +1,5 @@
-	<?php 
+	<?php
+	
 	echo file_get_contents("head.php");
 	?>
 
