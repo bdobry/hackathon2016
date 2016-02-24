@@ -24,7 +24,7 @@ if(isset($_POST["user"]) && isset($_POST["pass"])
 			}
 		}
 		
-		array_push($userlist, array("id"=>$highestUserId + 1, "user"=>$_POST["user"], "pass" => $_POST["pass"]));
+		array_push($userlist, array("id" => $highestUserId + 1, "user" => $_POST["user"], "pass" => $_POST["pass"], "isTeacher" => 0));
 	}
 	else{
 		$userlist = array("user"=>$_POST["user"], "pass" => $_POST["pass"]);
