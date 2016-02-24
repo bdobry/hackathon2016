@@ -1,4 +1,4 @@
-    <div class="row text-center">    
+    <div class="text-center">    
         <footer>
             <div class="row">
                 <div class="col-lg-12">
