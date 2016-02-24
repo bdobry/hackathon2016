@@ -4,7 +4,6 @@ session_start();
 ?>
 <?php
 if(isset($_POST["user"]) && isset($_POST["pass"])){
-	setcookie("user", $_POST["user"]);
 	
 	$filecontent = file_get_contents("users");
 	

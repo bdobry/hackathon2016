@@ -1,12 +1,4 @@
 <?php
-
-$username = "Stranger";
-if(isset($_COOKIE["user"])){
-	$username = $_COOKIE["user"];
-}
-?>
-
-<?php
     session_start();
     if(!isset($_SESSION["isAuthenticated"]) || !$_SESSION["isAuthenticated"]){
         header("location: /hackathon2016/index.php");
@@ -25,7 +17,7 @@ if(isset($_COOKIE["user"])){
 
         <!-- Jumbotron Header -->
         <header class="jumbotron fp-jt">
-            <h1> Welcome to Classmate, <?php echo ("$username"); ?></h1>
+            <h1> Welcome to Classmate, <?php echo $_SESSION["userName"]; ?></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
         </header>
 
