@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 <?php
+=======
+	<?php
+	
+>>>>>>> e26090cb79ee231339edb953466f8a0182e61104
 	echo file_get_contents("head.php");
 ?>
 
