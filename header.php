@@ -21,7 +21,7 @@
                         <a href="#">My Account</a>
                     </li>
                     <li>
-                        <form action="logout.php" method="post">
+                        <form class="navbar-form" action="logout.php" method="post">
                             <input class="btn btn-danger" type="submit" value="Logout">
                         </form>
                     </li>
