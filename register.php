@@ -1,3 +1,4 @@
+
 <?php
 if(isset($_POST["user"]) && isset($_POST["pass"])
 		&& $_POST["user"]!=""){
@@ -7,7 +8,14 @@ if(isset($_POST["user"]) && isset($_POST["pass"])
 	$userlist = json_decode($filecontent, true);
 	
 	if(is_array($userlist)){
+		$highestUserId = 0;
+
 		foreach ($userlist as $user){
+
+			if($user["id"] > $highestUserId){
+				$highestUserId = $user["id"];
+			}
+
 			if($_POST["user"] == $user["user"]){
 				setcookie("user", $_POST["user"]);
 				fclose($filehandle);
@@ -16,7 +24,7 @@ if(isset($_POST["user"]) && isset($_POST["pass"])
 			}
 		}
 		
-		array_push($userlist, array("user"=>$_POST["user"], "pass" => $_POST["pass"]));
+		array_push($userlist, array("id"=>$highestUserId + 1, "user"=>$_POST["user"], "pass" => $_POST["pass"]));
 	}
 	else{
 		$userlist = array("user"=>$_POST["user"], "pass" => $_POST["pass"]);

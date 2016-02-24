@@ -9,6 +9,9 @@ if(isset($_POST["user"]) && isset($_POST["pass"])){
 	if(is_array($userlist)){
 		foreach ($userlist as $user){
 			if($_POST["user"] == $user["user"] && $_POST["pass"] == $user["pass"]){
+				$_SESSION["userId"] = $user["id"];
+				$_SESSION["userName"] = $user["user"];
+				$_SESSION["isAuthenticated"] = true;
 				fclose($filehandle);
 				header("Location: main.php");
 				exit();

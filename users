@@ -1,1 +1,1 @@
-[{"user":"admin","pass":"1234"},{"user":"newaccount","pass":"2324"},{"user":"hej","pass":"hej"},{"user":"hi","pass":"hi"},{"user":"hello","pass":"hello"},{"user":"ik","pass":"ik"}]
+[{"id":1,"user":"admin","pass":"1234"},{"id":2,"user":"newaccount","pass":"2324"},{"id":3,"user":"hej","pass":"hej"},{"id":4,"user":"hi","pass":"hi"},{"id":5,"user":"hello","pass":"hello"},{"id":6,"user":"ik","pass":"ik"},{"id":7,"user":"kim","pass":"1234"}]
