@@ -23,6 +23,7 @@ img.bg {
 
 body {
 	background-color: transparent !important;
+	    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 .lp-forms{
@@ -68,4 +69,20 @@ margin-bottom: 20px;
 
 .main-footer{
 	background-color: #BDBDBD;
+}
+
+body {
+
+}
+
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 50px 0;
 }

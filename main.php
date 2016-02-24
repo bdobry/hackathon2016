@@ -12,24 +12,93 @@ if(isset($_COOKIE["user"])){
 	echo file_get_contents("header.php");
 	?>
 	
-<div class="container">	
-<div class="row">
-<div class="col-md-12">
-	<h1>Hello <?php echo ($username);?>!</h1>
-</div>
-	<div class="col-sm-12">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut magni, earum. Enim provident odit, adipisci nesciunt itaque et rem nemo officia maiores dicta cupiditate debitis optio voluptates eveniet expedita earum.</p>
-	</div>
-	<div class="col-sm-12">
-		<p>Incidunt quasi deserunt quidem assumenda ullam modi minima quo deleniti. Voluptate molestiae error cupiditate consectetur quae necessitatibus soluta, ea iste aut quasi, vero magni ducimus praesentium tenetur blanditiis adipisci pariatur.</p>
-	</div>
-	<div class="col-sm-12">
-		<p>Ipsa optio voluptates, quia quo numquam beatae obcaecati nemo nam magnam, ipsum, et quisquam dicta harum id sint sapiente nesciunt vitae porro consequatur dolorem assumenda. Nulla quaerat distinctio ea dicta?</p>
-	</div>
-</div>	
+<    <div class="container">
+
+        <!-- Jumbotron Header -->
+        <header class="jumbotron hero-spacer">
+            <h1>A Warm Welcome!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+            <p><a class="btn btn-primary btn-large">Call to action!</a>
+            </p>
+        </header>
+
+        <hr>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Latest Features</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
 	<?php
 	echo file_get_contents("pagefooter.php");
 	?>
+
+    </div>
+
 	<?php
 	echo file_get_contents("footer.php");
 	?>
