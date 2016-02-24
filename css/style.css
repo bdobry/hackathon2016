@@ -133,6 +133,15 @@ a .categoryiconwrap{
 }
 
 .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+    margin-right: 0px; */
+    margin-left: 0px;
+}
+
+.navbar-form {
     margin-right: 0px;
     margin-left: 0px;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
