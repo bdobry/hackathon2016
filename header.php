@@ -21,7 +21,10 @@
                         <a href="#">My Account</a>
                     </li>
                     <li>
-                        <a href="#">Log out</a>
+                        <form action="logout.php" method="post">
+                            <a href="#">Log out</a>
+                            <input type="submit">
+                        </form>
                     </li>
                 </ul>
             </div>
