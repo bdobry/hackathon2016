@@ -47,13 +47,25 @@ body {
 }
 
 .lp-logo{
-	margin: 20px auto;
+margin-top: 20px;
+margin-bottom: 20px;
 }
 
-.navbar-brand {
-    float: left;
-    height: auto;
-    padding: 15px 15px;
-    font-size: 18px;
-    line-height: 20px;
+
+#navbar-primary .navbar-nav { 
+  width: 100%;
+  text-align: center;}
+#navbar-primary .navbar-nav li {
+    display: inline-block;
+    float: none;}
+#navbar-primary .navbar-nav a {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+.icon-bar{
+	color: black;
+}
+
+.main-footer{
+	background-color: #BDBDBD;
 }
