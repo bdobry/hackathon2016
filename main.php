@@ -15,8 +15,8 @@ if(isset($_COOKIE["user"])){
 <    <div class="container">
 
         <!-- Jumbotron Header -->
-        <header class="jumbotron spacer">
-            <h1>Welcome to Classmate</h1>
+        <header class="jumbotron spacer fp-jt">
+            <h1> Welcome to Classmate, <?php echo ("$username"); ?></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
         </header>
 
@@ -35,14 +35,16 @@ if(isset($_COOKIE["user"])){
 
             <div class="col-md-4 col-sm-6 feature">
                 <div class="thumbnail">
-                    <div class="col-sm-12 categoryiconwrap">
-	                    <i class="fa fa-pencil fa-5x"></i>
-	                </div>
+					<a href="design.php">
+						<div class="col-sm-12 categoryiconwrap">
+		                    <i class="fa fa-pencil fa-5x"></i>
+		                </div>
+		             </a>
                     <div class="caption">
-                        <h3>Styling</h3>
-                        <p>CSS, LESS, Scss anything related to styling</p>
+                        <h3>Design</h3>
+                        <p>Anything related to design</p>
                         <p>
-                            <a href="#" class="btn btn-success">See questions</a>
+                            <a href="design.php" class="btn btn-success">See questions</a>
                         </p>
                     </div>
                 </div>
@@ -50,14 +52,16 @@ if(isset($_COOKIE["user"])){
 
             <div class="col-md-4 col-sm-6 feature">
                 <div class="thumbnail">
+                <a href="code.php">
                     <div class="col-sm-12 categoryiconwrap">
 	                    <i class="fa fa-code fa-5x"></i>
 	                </div>
+	            </a>
                     <div class="caption">
                         <h3>Coding</h3>
                         <p>Anything code/programming related</p>
                         <p>
-                            <a href="#" class="btn btn-success">See questions</a>
+                            <a href="code.php" class="btn btn-success">See questions</a>
                         </p>
                     </div>
                 </div>
@@ -65,14 +69,16 @@ if(isset($_COOKIE["user"])){
 
             <div class="col-md-4 col-sm-6 feature">
                 <div class="thumbnail">
+                <a href="off-topic.php">
 	                <div class="col-sm-12 categoryiconwrap">
 	                    <i class="fa fa-coffee fa-5x"></i>
 	                </div>
+	            </a>
                     <div class="caption">
                         <h3>Off topic</h3>
                         <p>Anything really</p>
                         <p>
-                            <a href="#" class="btn btn-success">See questions</a>
+                            <a href="off-topic.php" class="btn btn-success">See questions</a>
                         </p>
                     </div>
                 </div>
@@ -81,13 +87,12 @@ if(isset($_COOKIE["user"])){
         <!-- /.row -->
 
         <hr>
+     </div>
 
         <!-- Footer -->
 	<?php
 	echo file_get_contents("pagefooter.php");
 	?>
-
-    </div>
 
 	<?php
 	echo file_get_contents("footer.php");

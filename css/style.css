@@ -92,3 +92,17 @@ footer {
     background-color: #bdbdbd;
     margin-bottom: 30px;
 }
+
+a .categoryiconwrap{
+	color: #333;
+}
+
+.fp-jt{
+	background: none;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.no-mg-top{
+	margin-top: 0px;
+}
