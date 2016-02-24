@@ -6,7 +6,7 @@ $_SESSION["isTeacher"] = null;
 $_SESSION["isAuthenticated"] = false;
 session_destroy();
 
-header("location: /index.php");
+header("location: /hackathon2016/index.php");
 
 ?>
 
