@@ -22,8 +22,7 @@
                     </li>
                     <li>
                         <form action="logout.php" method="post">
-                            <a href="#">Log out</a>
-                            <input type="submit">
+                            <input class="btn btn-success" type="submit" value="Logout">
                         </form>
                     </li>
                 </ul>
