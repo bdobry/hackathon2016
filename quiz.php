@@ -16,8 +16,9 @@
               
                 <div class="btn-group inline" role="group">
                     
-                    <a href="mainquiz.php" class="btn btn-primary">Go back</a>
-                    <a href="manage.php" class="btn btn-danger">Edit quiz</a>
+                    <a href="manage.php" class="btn btn-primary">Edit quiz</a>
+                    <a href="mainquiz.php" class="btn btn-danger">Go back</a>
+
                    
                 </div>
                 </div>

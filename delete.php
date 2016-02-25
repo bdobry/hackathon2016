@@ -20,12 +20,7 @@
         header("Location: manage.php");        
     }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">   
-</head>
-<body>
+
     <div class="container">
                 <div class="span10 offset1">
                     <div class="row">
@@ -41,5 +36,4 @@
                     </form>
                 </div>            
     </div> <!-- /container -->
-  </body>
-</html>
+  
