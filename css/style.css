@@ -130,7 +130,7 @@ footer {
 }
 
 .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
-    margin-right: 0px; */
+    margin-right: 0px;
     margin-left: 0px;
 }
 
@@ -257,6 +257,7 @@ p.votecounter{
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 
 
 /*Quiz style*/
@@ -398,4 +399,12 @@ input[type="radio"] .styled:checked + label::before {
 input[type="checkbox"] .styled:checked + label::after,
 input[type="radio"] .styled:checked + label::after {
   color: #fff;
+}
+=======
+.error{
+  color: #d9534f;
+}
+
+.valid{
+  color: #5cb85c;
 }
