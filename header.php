@@ -24,8 +24,11 @@
                         <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="#">My Account</a>
+                        <a href="profile.php">My Account</a>
+
+                        <a><img src="https://nu.aeon.co/assets/avatar-placeholder-1595e26c68347a14a51c9a5bcc34c6a26e97ff5218ce74c79db21df9fb808210.png" alt="" class="img-responsive avatar"></a>
                     </li>
+                    <li></li>
                 </ul>                   
                 
             </div>
