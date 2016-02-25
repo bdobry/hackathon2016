@@ -15,7 +15,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                                 <form class="navbar-left navbar-form" action="" method="post">
-                                <button class="btn btn-success navbar-button">Ask question</button>
+                                <button class="btn btn-success navbar-button" href="askquestion.php">Ask question</button>
                                 </form>
                                 <form class="navbar-left navbar-form" action="logout.php" method="post">
                                 <button class="btn btn-danger navbar-button" type="submit">Logout</button>
