@@ -11,7 +11,7 @@
         <!-- Jumbotron Header -->
         <header class="jumbotron fp-jt">
             <h1>Quizzes</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+            <p>Prepare for exam by solving chosen quiz.</p>
         </header>
 
         <hr>
@@ -35,10 +35,10 @@
 		                </div>
 		             </a>
                     <div class="caption">
-                        <h3>Design</h3>
-                        <p>Anything related to design</p>
+                        <h3>PHP Quiz</h3>
+                        <p>Check your knowledge of PHP</p>
                         <p>
-                            <a href="quiz.php" class="btn btn-success">See questions</a>
+                            <a href="quiz.php" class="btn btn-success">Start quiz</a>
                         </p>
                     </div>
                 </div>
@@ -52,10 +52,10 @@
 	                </div>
 	            </a>
                     <div class="caption">
-                        <h3>Coding</h3>
-                        <p>Anything code/programming related</p>
+                        <h3>Photoshop quiz</h3>
+                        <p>Check your knowledge of Photoshop</p>
                         <p>
-                            <a href="quiz2.php" class="btn btn-success">See questions</a>
+                            <a href="quiz2.php" class="btn btn-success">Start quiz</a>
                         </p>
                     </div>
                 </div>
@@ -69,10 +69,10 @@
 	                </div>
 	            </a>
                     <div class="caption">
-                        <h3>Off topic</h3>
-                        <p>Anything really</p>
+                        <h3>UX/UI</h3>
+                        <p>Check your knowledge in design</p>
                         <p>
-                            <a href="quiz2.php" class="btn btn-success">See questions</a>
+                            <a href="quiz2.php" class="btn btn-success">Start quiz</a>
                         </p>
                     </div>
                 </div>
