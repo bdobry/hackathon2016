@@ -19,7 +19,7 @@ $wrongAnswer = 0;
 
 
 require_once('functions.php');
-require_once('setting.php');
+require_once('setting2.php');
 
 
 if (isset($_POST['submit'])){
@@ -35,11 +35,11 @@ if (isset($_POST['submit'])){
 
 <!--Button for teacher to manage questions-->
 
-<a href="manage.php">Edit quiz</a>
+<a href="manage2.php">Edit quiz</a>
 
 <!--Display form-->
 
-<form action="result.php" method="post">
+<form action="result2.php" method="post">
 <h1> Quiz number 1</h1>
     <?php
     foreach($questions as $id => $question) {

@@ -19,7 +19,7 @@ $wrongAnswer = 0;
 
 
 require_once('functions.php');
-require_once('setting.php');
+require_once('setting2.php');
 
 
 if (isset($_POST['submit'])){

@@ -5,7 +5,7 @@
 
 <p>
 
-                               <a href="add_quiz.php">Create a question</a>
+                               <a href="add_quiz2.php">Create a question</a>
                     
                 </p>
 
@@ -24,7 +24,7 @@
  <?php
                    include 'db.php';
                    $pdo = Database::connect();
-                   $sql = 'SELECT * FROM quiz';
+                   $sql = 'SELECT * FROM quiz2';
                    foreach ($pdo->query($sql) as $row) {
 					   
                      echo '<tr>';
@@ -38,11 +38,11 @@
                            
                               echo '<td width=250>';
                                
-                                echo '<a href="delete.php?id='.$row['questionid'].'">Delete this question</a>';
+                                echo '<a href="delete2.php?id='.$row['questionid'].'">Delete this question</a>';
 								
                                 echo '</td>';
 								 echo '<td width=250>';
-								echo '<a href="edit.php?id='.$row['questionid'].'">Edit this question</a>';
+								echo '<a href="edit2.php?id='.$row['questionid'].'">Edit this question</a>';
 								 echo '</td>';
                                 echo '</tr>';
 

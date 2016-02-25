@@ -5,7 +5,7 @@
 <div class="row">
     <div class="col-md-offset-2 col-md-8">
         <h1>Add Quiz</h1>
-        <form action="createquiz.php" method="post">
+        <form action="createquiz2.php" method="post">
             <div class="form-group">
                 <label for="question">Ask Question</label>
                 <input type="text" class="form-control" id="question" name="question" placeholder="Enter your question here">
