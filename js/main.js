@@ -22,6 +22,10 @@ $(document).ready(function () {
                 required: false,
                 email: true
             },
+                oldPass: {
+			    required: false,
+			    remote: "check-password.php"
+			},
             newPass1: {
                 minlength: 6,
                 required: false
