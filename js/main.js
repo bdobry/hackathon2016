@@ -10,22 +10,30 @@ $(document).ready(function() {
 		});
 });
 
-$(document).ready(function() {
-    $('#emailForm').formValidation({
-        framework: 'bootstrap',
-        icon: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
+$(document).ready(function () {
+
+    $('#editProfileForm').validate({
+        rules: {
+            name: {
+                minlength: 2,
+                required: true
+            },
             email: {
-                validators: {
-                    emailAddress: {
-                        message: 'The value is not a valid email address'
-                    }
-                }
+                required: true,
+                email: true
+            },
+            message: {
+                minlength: 2,
+                required: true
             }
+        },
+        highlight: function (element) {
+            $(element).closest('.control-group').removeClass('success').addClass('error');
+        },
+        success: function (element) {
+            element.text('OK!').addClass('valid')
+                .closest('.control-group').removeClass('error').addClass('success');
         }
     });
+
 });
