@@ -60,25 +60,28 @@ if (isset($_POST['submit'])){
     <?php
     foreach($questions as $id => $question) {
         echo "<div class=\"form-group\">";
-        echo "<h4> $question</h4>"."<ol>";//display the question
+        echo "<h3> $question</h3>"."<ul class='radio radio-primary'>";//display the question
 
         //Display multiple choices
         $randomChoices = $choices[$id];
         $randomChoices = shuffle_assoc($randomChoices);
         foreach ($randomChoices as $key => $values){
-            echo '<li><input type="radio" name="response['.$id.'] id="'.$id.'" value="' .$values.'"/>';
+            echo '<li><input id="radio" type="radio"  name="response['.$id.'] id="'.$id.'" value="' .$values.'"/>';
         ?>
             <label for="question-<?php echo($id); ?>"><?php echo($values);?></label></li>
     <?php
 
         }
             echo("</ul>");
-            echo("</div>");
+           
         }
+		
        ?>
 
     <input type="submit" name="submit" class="btn btn-primary" value="Submit Quiz" />
 </form>
+
+</div>
 
 
             </div>
