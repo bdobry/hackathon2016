@@ -36,8 +36,8 @@
 
             <div class="col-md-4 col-sm-6 feature">
                 <div class="thumbnail">
-					<a href="design.php">
-						<div class="col-sm-12 categoryiconwrap">
+					<a href="design.php" class="">
+						<div class="col-sm-12 categoryiconwrap designcat designcatbg">
 		                    <i class="fa fa-pencil fa-5x"></i>
 		                </div>
 		             </a>
@@ -54,7 +54,7 @@
             <div class="col-md-4 col-sm-6 feature">
                 <div class="thumbnail">
                 <a href="code.php">
-                    <div class="col-sm-12 categoryiconwrap">
+                    <div class="col-sm-12 categoryiconwrap codecat codecatbg">
 	                    <i class="fa fa-code fa-5x"></i>
 	                </div>
 	            </a>
@@ -71,7 +71,7 @@
             <div class="col-md-4 col-sm-6 feature">
                 <div class="thumbnail">
                 <a href="off-topic.php">
-	                <div class="col-sm-12 categoryiconwrap">
+	                <div class="col-sm-12 categoryiconwrap off-topiccat off-topiccatbg">
 	                    <i class="fa fa-coffee fa-5x"></i>
 	                </div>
 	            </a>

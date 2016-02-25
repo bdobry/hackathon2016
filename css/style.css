@@ -93,10 +93,6 @@ footer {
     margin-bottom: 30px;
 }
 
-a .categoryiconwrap{
-	color: #333;
-}
-
 .fp-jt{
 	background: none;
 	padding-left: 0px !important;
@@ -195,4 +191,31 @@ select option[disabled]:first-child {
 
 .question-container{
   margin-top: 20px;
+}
+
+.designcatbg {
+    background: url('../images/design.jpg') no-repeat;
+    background-size: 100%;
+}
+
+.codecatbg {
+    background: url('../images/code.jpg') no-repeat;
+    background-size: 100%;
+}
+
+.off-topiccatbg {
+    background: url('../images/off-topic.jpg') no-repeat;
+    background-size: 100%;
+}
+
+.designcat{
+  color: #FF8A65;
+}
+
+.codecat{
+  color: #00BCD4;
+}
+
+.off-topiccat{
+  color: #4CAF50;
 }
