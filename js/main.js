@@ -14,17 +14,20 @@ $(document).ready(function () {
 
     $('#editProfileForm').validate({
         rules: {
-            name: {
-                minlength: 2,
-                required: true
+            user: {
+                minlength: 5,
+                required: false
             },
             email: {
-                required: true,
+                required: false,
                 email: true
             },
-            message: {
-                minlength: 2,
-                required: true
+            newPass1: {
+                minlength: 6,
+                required: false
+            },
+            newPass2: {
+            	equalTo: "newPass1"
             }
         },
         highlight: function (element) {
