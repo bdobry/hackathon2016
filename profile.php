@@ -22,14 +22,14 @@ if(!isset($_SESSION["isAuthenticated"]) || !$_SESSION["isAuthenticated"]){
 
     <hr>
     <div class="col-lg-6">
-        <form action="editProfile.php" method="post">
+        <form action="editProfile.php" method="post" name="editProfileForm">
         <div class="form-group">
             <label for="user">Change username</label>
             <input type="text" class="form-control" name="user" placeholder="<?php echo $_SESSION["userName"] ?>">
         </div>
         <div class="form-group">
         <label for="email">Change Email</label>
-          <input type="email" class="form-control" id="InputEmail" name="email" placeholder="<?php echo $_SESSION["email"] ?>" required>
+          <input type="email" class="form-control" id="InputEmail" name="email" placeholder="<?php echo $_SESSION["email"] ?>">
         </div>
         <div class="form-group">
             <label for="oldPass">Current Password</label>
@@ -43,8 +43,11 @@ if(!isset($_SESSION["isAuthenticated"]) || !$_SESSION["isAuthenticated"]){
             <label for="newPass2">Repeat New Password</label>
             <input type="password" class="form-control" name="newPass2" placeholder="Repeat New Password">
         </div>
+        <div>
+            <p class="alert alert-danger" name="passError" hidden>The New Password field needs to match the Repeat New Password field</p>
+        </div>
         <div class="form-group">
-            <input type="submit" name="register" class="btn btn-success login login-submit" value="Save changes">
+            <div onclick="submit()" class="btn btn-success login login-submit">Save changes</div>
         </div>
         </form>    
     </div>
@@ -59,3 +62,35 @@ if(!isset($_SESSION["isAuthenticated"]) || !$_SESSION["isAuthenticated"]){
 	<?php
 	echo file_get_contents("footer.php");
 	?>
+
+<script type="application/javascript">
+
+    var submit = function () {
+
+        var rdyToSubmit = true;
+
+        var oldPass = document.getElementsByName("oldPass");
+        var newPass1 = document.getElementsByName("newPass1");
+        var newPass2 = document.getElementsByName("newPass2");
+        var errorMessage = document.getElementsByName("passError");
+
+        if (newPass1[0].value == newPass2[0].value) {
+            //todo check old password on server
+
+
+        }
+        else{
+            console.log(errorMessage);
+            errorMessage[0].removeAttribute("hidden");
+            rdyToSubmit = false;
+        }
+
+
+        if(rdyToSubmit){
+            document.getElementsByName("editProfileForm")[0].submit();
+        }
+
+    };
+
+
+</script>
