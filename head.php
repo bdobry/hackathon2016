@@ -21,6 +21,7 @@
 
 				clicks += 1;
 				document.getElementById("demo").innerHTML = clicks;
+        changeColor();
 
 
 			}
@@ -28,9 +29,21 @@
 
 				clicks -= 1;
 				document.getElementById("demo").innerHTML = clicks;
-
+        changeColor();
 
 			}
+      function changeColor(){
+        console.log($("#demo"));
+        if (clicks > 0) {
+          $("#demo").addClass('plus').removeClass('minus');
+        }else if(clicks < 0){
+        $("#demo").addClass('minus').removeClass('plus');
+        }else{
+      $("#demo").removeClass('plus minus');
+      }
+
+        
+      }
 
 
 		</script>

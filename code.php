@@ -39,7 +39,7 @@
                         if ($result->num_rows > 0) {
                             // output data of each row
                             while($row = $result->fetch_assoc()) {
-                                echo '<div class="question col-md-12">';
+                                echo '<div class="question codecat col-md-12">';
                               /* echo "Title: " . $row["title"]. " <br>Question: " . $row["question"]. "<br>";*/
                               echo "<div class=\"title col-sm-12\"><a href=\"questionpage.php?id=$row[id]\"><h2>$row[title]</h2></a></div>";
                                echo '</div>';

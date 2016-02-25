@@ -110,6 +110,7 @@ footer {
 
 .vote{
 	cursor: pointer;
+  color: #333;
 }
 
 .vote.downvote:hover{
@@ -212,7 +213,14 @@ select option[disabled]:first-child {
   color: #FF8A65;
 }
 
+.designcat a{
+  color: #FF8A65;
+}
 .codecat{
+  color: #00BCD4;
+}
+
+.codecat a{
   color: #00BCD4;
 }
 
@@ -222,4 +230,17 @@ select option[disabled]:first-child {
 
 .off-topiccat a {
     color: #4CAF50;
+}
+
+p.votecounter{
+    margin-bottom: 0px;
+}
+
+.votecounter.plus{
+  color: green;
+  font-weight: bold;
+}
+.votecounter.minus{
+  color: red;
+  font-weight: bold;
 }

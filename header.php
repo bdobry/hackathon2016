@@ -23,6 +23,9 @@
 
                         <div class="inlineb navbar-form navbar-avatar-wrap"><img src="https://nu.aeon.co/assets/avatar-placeholder-1595e26c68347a14a51c9a5bcc34c6a26e97ff5218ce74c79db21df9fb808210.png" alt="" class="img-responsive avatar-nav"></div>
                     </li>
+                        <form class="navbar-left navbar-form" action="mainquiz.php">
+                        <button  class="btn btn-primary navbar-button">Quiz</button>
+                        </form>
                         <form class="navbar-left navbar-form" action="askquestion.php">
                         <button  class="btn btn-success navbar-button">Ask question</button>
                         </form>
