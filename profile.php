@@ -1,11 +1,17 @@
-
-	<?php 
+<?php
+session_start();
+if(!isset($_SESSION["isAuthenticated"]) || !$_SESSION["isAuthenticated"]){
+    header("location: /hackathon2016/index.php");
+    exit;
+}
+?>
+<?php
 	echo file_get_contents("head.php");
 	?>
 	<?php 
 	echo file_get_contents("header.php");
 	?>
-	
+
 <div class="container">
 
         <!-- Jumbotron Header -->
@@ -16,26 +22,26 @@
 
     <hr>
     <div class="col-lg-6">
-        <form action="register.php" method="post">
+        <form action="editProfile.php" method="post">
         <div class="form-group">
-            <label for="Username">Change username</label>
-            <input type="text" class="form-control" name="user" placeholder="New Username">
+            <label for="user">Change username</label>
+            <input type="text" class="form-control" name="user" placeholder="<?php echo $_SESSION["userName"] ?>">
         </div>
         <div class="form-group">
-        <label for="InputEmail">Change Email</label>
-          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="New Email" required>
+        <label for="email">Change Email</label>
+          <input type="email" class="form-control" id="InputEmail" name="email" placeholder="<?php echo $_SESSION["email"] ?>" required>
         </div>
         <div class="form-group">
-            <label for="password">Current Password</label>
-            <input type="password" class="form-control" name="pass" placeholder="Current Password">
+            <label for="oldPass">Current Password</label>
+            <input type="password" class="form-control" name="oldPass" placeholder="Current Password">
         </div>
         <div class="form-group">
-            <label for="password">New Password</label>
-            <input type="password" class="form-control" name="pass" placeholder="New Password">
+            <label for="newPass1">New Password</label>
+            <input type="password" class="form-control" name="newPass1" placeholder="New Password">
         </div>
         <div class="form-group">
-            <label for="password">Repeat New Password</label>
-            <input type="password" class="form-control" name="pass" placeholder="Repeat New Password">
+            <label for="newPass2">Repeat New Password</label>
+            <input type="password" class="form-control" name="newPass2" placeholder="Repeat New Password">
         </div>
         <div class="form-group">
             <input type="submit" name="register" class="btn btn-success login login-submit" value="Save changes">

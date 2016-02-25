@@ -14,6 +14,7 @@ if(isset($_POST["user"]) && isset($_POST["pass"])){
 			if($_POST["user"] == $user["user"] && $_POST["pass"] == $user["pass"]){
 				$_SESSION["userId"] = $user["id"];
 				$_SESSION["userName"] = $user["user"];
+				$_SESSION["email"] = $user["email"];
 				$_SESSION["isTeacher"] = $user["isTeacher"];
 				$_SESSION["isAuthenticated"] = true;
 
