@@ -25,7 +25,7 @@ $(document).ready(function () {
             newPass1: {
                 minlength: 6,
                 required: false
-            }
+            },
             newPass2: {
             	equalTo: "newPass1"
             }
