@@ -41,7 +41,7 @@
               PrepSQL($varQuestion) . ")";
       $result = $dbc->query($sql);
       
-      header("Location: main.php");
+      // header("Location: main.php");
       exit();
     }
   }
