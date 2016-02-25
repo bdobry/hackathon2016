@@ -15,5 +15,24 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
       <script src="js/main.js"></script>
+		<script>
+			var clicks = 0;
+			function myFunction() {
+
+				clicks += 1;
+				document.getElementById("demo").innerHTML = clicks;
+
+
+			}
+			function myFunctionminus() {
+
+				clicks -= 1;
+				document.getElementById("demo").innerHTML = clicks;
+
+
+			}
+
+
+		</script>
 	</head>
 	<body>

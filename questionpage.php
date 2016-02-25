@@ -27,18 +27,21 @@ if ($result->num_rows > 0) {
         <!-- Jumbotron Header -->
         <header class="jumbotron fp-jt">
             <h1 class="question-title"><?php echo $row["title"];?> </h1>
+
         </header>
 
         <hr>
 
         <!-- Title -->
+
         <div class="row">
             <h3><i class="fa fa-question-circle"></i> Question:</h3>
             <div class="col-xs-12 questionwrap">
             <div class="votewrap col-xs-2 col-lg-1 inline-block">
                 <div class="row">
-                    <div class="col-xs-12"><i class="vote upvote fa fa-chevron-up fa-3x"></i></div>
-                    <div class="col-xs-12"><i class="vote downvote fa fa-chevron-down fa-3x"></i></div>
+                    <div class="col-xs-12"><a onclick="myFunction()"><i class="vote upvote fa fa-chevron-up fa-3x"></i></a></div>
+                    <div class="col-xs-12"><p id="demo"></p></div>
+                    <div class="col-xs-12"><a onclick="myFunctionminus()"><i class="vote downvote fa fa-chevron-down fa-3x"></i></a></div>
                 </div>
             </div>
             <div class="well subquestion-container col-xs-10 col-lg-11 inline-block">
