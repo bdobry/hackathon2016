@@ -1,13 +1,5 @@
 <?php include "db_conn.php"; ?>
 
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
-
-<body>
 
 <?php
 
@@ -35,9 +27,41 @@ if (isset($_POST['submit'])){
 
 
 
+	<?php 
+	echo file_get_contents("head.php");
+	?>
+	<?php 
+	echo file_get_contents("header.php");
+	?>
+    
+     <div class="container">
+
+        <!-- Jumbotron Header -->
+        <header class="jumbotron fp-jt">
+            <h1>Congratulations!</h1>
+          <div class="col-sm-6 col-md-6 text-right">
+              
+                <div class="btn-group inline" role="group">
+                    
+                 
+                    <a href="quiz.php" class="btn btn-danger">Try again</a>
+
+                   
+                </div>
+                </div>
+        </header>
+
+        <hr>
+
+        <!--Quiz -->
+        <div class="row">
+        
+            <div class="col-lg-12">
+
+
 <!-- //Display result-->
-<h1> CONGRATULATIONS! </h1>
-<h2>You have :</h2>
+
+<h2>You had :</h2>
 
     <?php
        if ($rightAnswer > 0){ ?>
@@ -49,6 +73,25 @@ if (isset($_POST['submit'])){
         }
      ?>
 
+</div>
 
-</body>
-</html>
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Quiz-->
+       
+        <!-- /.row -->
+
+        <hr>
+     </div>
+
+        <!-- Footer -->
+	<?php
+	echo file_get_contents("pagefooter.php");
+	?>
+
+	<?php
+	echo file_get_contents("footer.php");
+	?>
