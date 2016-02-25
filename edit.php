@@ -86,11 +86,35 @@
         
     }
 ?>
-<!DOCTYPE html> 
-<html>
-<head>
-</head> 
-<body> 
+<?php echo file_get_contents("head.php"); ?>
+<?php echo file_get_contents("header.php");?>
+
+
+<div class="container">
+
+        <!-- Jumbotron Header -->
+        <header class="jumbotron fp-jt">
+            <h1>Edit Quiz</h1>
+          <div class="col-sm-6 col-md-6 text-right">
+              
+                <div class="btn-group inline" role="group">
+                    
+                    <a href="manage.php" class="btn btn-danger">Go back</a>
+                   
+                </div>
+                </div>
+        </header>
+
+        <hr>
+
+        <!--Quiz -->
+        <div class="row">
+        
+            <div class="col-lg-12">
+
+<div class="row">
+    <div class="col-md-offset-2 col-md-8">
+
 
 
 <form class="form-horizontal" method="post">
@@ -99,7 +123,7 @@
                       <div class="control-group <?php echo !empty($nameError)?'error':'';?>">
                         <label class="control-label">Question</label>
                         <div class="controls">
-                            <input name="name" type="text"  placeholder="name" value="<?php echo !empty($name)?$name:'';?>">
+                            <input name="name" type="text" class="form-control"  placeholder="name" value="<?php echo !empty($name)?$name:'';?>">
                             <?php if (!empty($nameError)): ?>
                                 <span class="help-inline"><?php echo $nameError;?></span>
                             <?php endif;?>
@@ -109,7 +133,7 @@
                        <div class="control-group <?php echo !empty($choice1Error)?'error':'';?>">
                         <label class="control-label">Choice1</label>
                         <div class="controls">
-                            <input name="choice1" type="text"  placeholder="choice1" value="<?php echo !empty($choice1)?$choice1:'';?>">
+                            <input name="choice1" type="text" class="form-control" placeholder="choice1" value="<?php echo !empty($choice1)?$choice1:'';?>">
                             <?php if (!empty($choice1Error)): ?>
                                 <span class="help-inline"><?php echo $choice1Error;?></span>
                             <?php endif; ?>
@@ -119,7 +143,7 @@
                          <div class="control-group <?php echo !empty($choice2Error)?'error':'';?>">
                         <label class="control-label">Choice2</label>
                         <div class="controls">
-                            <input name="choice2" type="text"  placeholder="choice2" value="<?php echo !empty($choice2)?$choice2:'';?>">
+                            <input name="choice2" type="text"  class="form-control" placeholder="choice2" value="<?php echo !empty($choice2)?$choice2:'';?>">
                             <?php if (!empty($choice2Error)): ?>
                                 <span class="help-inline"><?php echo $choice2Error;?></span>
                             <?php endif; ?>
@@ -129,7 +153,7 @@
                          <div class="control-group <?php echo !empty($choice3Error)?'error':'';?>">
                         <label class="control-label">Choice3</label>
                         <div class="controls">
-                            <input name="choice3" type="text"  placeholder="choice3" value="<?php echo !empty($choice3)?$choice3:'';?>">
+                            <input name="choice3" type="text" class="form-control" placeholder="choice3" value="<?php echo !empty($choice3)?$choice3:'';?>">
                             <?php if (!empty($choice3Error)): ?>
                                 <span class="help-inline"><?php echo $choice3Error;?></span>
                             <?php endif; ?>
@@ -139,7 +163,7 @@
                          <div class="control-group <?php echo !empty($answerError)?'error':'';?>">
                         <label class="control-label">Answer</label>
                         <div class="controls">
-                            <input name="answer" type="text"  placeholder="answer" value="<?php echo !empty($answer)?$answer:'';?>">
+                            <input name="answer" type="text" class="form-control" placeholder="answer" value="<?php echo !empty($answer)?$answer:'';?>">
                             <?php if (!empty($answerError)): ?>
                                 <span class="help-inline"><?php echo $answerError;?></span>
                             <?php endif; ?>
@@ -147,15 +171,32 @@
                       </div>
                       
                       <div class="form-actions">
+                      <br>
                           <button type="submit" class="btn btn-success">Edit</button>
                          
                         </div>
                     </form>
 
-        
+           
+ </div>
+     </div>
+    
+       </div>
+        </div>
+        <!-- /.row -->
 
+        <!-- Quiz-->
+       
+        <!-- /.row -->
 
+        <hr>
+     </div>
 
-</body>
+        <!-- Footer -->
+	<?php
+	echo file_get_contents("pagefooter.php");
+	?>
 
-</html>
+	<?php
+	echo file_get_contents("footer.php");
+	?>
