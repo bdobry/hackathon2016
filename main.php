@@ -13,7 +13,7 @@
 	echo file_get_contents("header.php");
 	?>
 	
-<    <div class="container">
+   <div class="container">
 
         <!-- Jumbotron Header -->
         <header class="jumbotron fp-jt">
