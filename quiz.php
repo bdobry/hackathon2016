@@ -1,15 +1,26 @@
-<?php include "db_conn.php"; ?>
 
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
+	<?php 
+	echo file_get_contents("head.php");
+	?>
+	<?php 
+	echo file_get_contents("header.php");
+	?>
+    <?php include "db_conn.php"; ?>
+	
+   <div class="container">
 
-<body>
+        <!-- Jumbotron Header -->
+        <header class="jumbotron fp-jt">
+            <h1>PHP Quiz</h1>
+            <p><a href="manage.php">Edit quiz</a></p>
+        </header>
 
-<?php
+        <hr>
+
+        <!--Quiz -->
+        <div class="row">
+            <div class="col-lg-12">
+              <?php
 
 
 error_reporting(E_ALL);
@@ -33,14 +44,9 @@ if (isset($_POST['submit'])){
 }
 ?>
 
-<!--Button for teacher to manage questions-->
-
-<a href="manage.php">Edit quiz</a>
-
 <!--Display form-->
 
 <form action="result.php" method="post">
-<h1> Quiz number 1</h1>
     <?php
     foreach($questions as $id => $question) {
         echo "<div class=\"form-group\">";
@@ -65,9 +71,22 @@ if (isset($_POST['submit'])){
 </form>
 
 
+            </div>
+        </div>
+        <!-- /.row -->
 
+        <!-- Quiz-->
+       
+        <!-- /.row -->
 
+        <hr>
+     </div>
 
+        <!-- Footer -->
+	<?php
+	echo file_get_contents("pagefooter.php");
+	?>
 
-</body>
-</html>
+	<?php
+	echo file_get_contents("footer.php");
+	?>
