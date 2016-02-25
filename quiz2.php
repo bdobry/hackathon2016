@@ -11,7 +11,7 @@
 
         <!-- Jumbotron Header -->
         <header class="jumbotron fp-jt">
-            <h1>Photoshop Quiz</h1>
+            <h1>Photoshop</h1>
           <div class="col-sm-6 col-md-6 text-right">
               
                 <div class="btn-group inline" role="group">
