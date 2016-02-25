@@ -11,7 +11,7 @@
               
                 <div class="btn-group inline" role="group">
                     
-                    <a href="add_quiz2.php" class="btn btn-primary">Create question</a>
+                    <a href="manage2.php" class="btn btn-danger">Go back</a>
                    
                 </div>
                 </div>
