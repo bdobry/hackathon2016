@@ -408,3 +408,14 @@ input[type="radio"] .styled:checked + label::after {
 .valid{
   color: #5cb85c;
 }
+
+.logo{
+      margin: 8px 0px;
+}
+
+.navbar-avatar-wrap {
+    margin: 0px;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    padding-left: 0px !important;
+}
