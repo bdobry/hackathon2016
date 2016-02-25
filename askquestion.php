@@ -41,7 +41,7 @@
               PrepSQL($varQuestion) . ")";
       $result = $dbc->query($sql);
       
-      // header("Location: main.php");
+      header("Location: main.php");
       exit();
     }
   }
@@ -61,7 +61,7 @@
         }
 
         // Quote
-        $value = "'" . mysql_real_escape_string($value) . "'";
+        $value = "'" . $value . "'";
 
         return($value);
     }
