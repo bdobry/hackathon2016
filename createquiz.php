@@ -11,7 +11,10 @@ if(empty($_POST['question'])||
     empty($_POST['wrong_answer2'])		||
     empty($_POST['wrong_answer3']))
 {
-    echo "Please complete all fields";
+    echo '<script>';
+	echo 'alert("Please, fill all fields");';
+    echo 'window.location = "add_quiz.php"';
+    echo '</script>";';
     exit();
 }
 
@@ -33,9 +36,15 @@ $query = "INSERT INTO quiz
 $result = $dbc->query($query);
 
 if($result){
-    echo "Your quiz has been saved";
+   echo '<script>';
+	echo 'alert("Your question was saved");';
+    echo 'window.location = "manage.php"';
+    echo '</script>";';
 } else {
-    echo '<h1>System Error</h1>';
+    echo '<script>';
+	echo 'alert("Something went wrong, try again");';
+    echo 'window.location = "add_quiz.php"';
+    echo '</script>";';
 }
 $dbc->close();
 
