@@ -10,7 +10,7 @@
 
         <!-- Jumbotron Header -->
         <header class="jumbotron fp-jt">
-            <h1>Code questions</h1>
+            <h1><i class="fa fa-code codecat"></i> Code questions</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
         </header>
 

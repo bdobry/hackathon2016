@@ -31,7 +31,7 @@
                 <div class="thumbnail">
 					<a href="quiz.php">
 						<div class="col-sm-12 categoryiconwrap">
-		                    <i class="fa fa-pencil fa-5x"></i>
+		                    <i class="fa fa-code fa-5x"></i>
 		                </div>
 		             </a>
                     <div class="caption">
@@ -48,7 +48,7 @@
                 <div class="thumbnail">
                 <a href="quiz2.php">
                     <div class="col-sm-12 categoryiconwrap">
-	                    <i class="fa fa-code fa-5x"></i>
+	                    <i class="fa fa-pencil fa-5x"></i>
 	                </div>
 	            </a>
                     <div class="caption">
@@ -65,7 +65,7 @@
                 <div class="thumbnail">
                 <a href="quiz2.php">
 	                <div class="col-sm-12 categoryiconwrap">
-	                    <i class="fa fa-coffee fa-5x"></i>
+	                    <i class="fa fa-desktop fa-5x"></i>
 	                </div>
 	            </a>
                     <div class="caption">
