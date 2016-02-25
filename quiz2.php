@@ -1,13 +1,34 @@
-<?php include "db_conn.php"; ?>
 
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
+	<?php 
+	echo file_get_contents("head.php");
+	?>
+	<?php 
+	echo file_get_contents("header.php");
+	?>
+    <?php include "db_conn.php"; ?>
+	
+   <div class="container">
 
-<body>
+        <!-- Jumbotron Header -->
+        <header class="jumbotron fp-jt">
+            <h1>Photoshop Quiz</h1>
+          <div class="col-sm-6 col-md-6 text-right">
+              
+                <div class="btn-group inline" role="group">
+                    
+                    <a href="mainquiz.php" class="btn btn-primary">Go back</a>
+                    <a href="manage2.php" class="btn btn-danger">Edit quiz</a>
+                   
+                </div>
+                </div>
+        </header>
+
+        <hr>
+
+        <!--Quiz -->
+        <div class="row">
+        
+            <div class="col-lg-12">
 
 <?php
 
@@ -33,14 +54,12 @@ if (isset($_POST['submit'])){
 }
 ?>
 
-<!--Button for teacher to manage questions-->
 
-<a href="manage2.php">Edit quiz</a>
 
 <!--Display form-->
 
 <form action="result2.php" method="post">
-<h1> Quiz number 1</h1>
+
     <?php
     foreach($questions as $id => $question) {
         echo "<div class=\"form-group\">";
@@ -68,6 +87,22 @@ if (isset($_POST['submit'])){
 
 
 
+            </div>
+        </div>
+        <!-- /.row -->
 
-</body>
-</html>
+        <!-- Quiz-->
+       
+        <!-- /.row -->
+
+        <hr>
+     </div>
+
+        <!-- Footer -->
+	<?php
+	echo file_get_contents("pagefooter.php");
+	?>
+
+	<?php
+	echo file_get_contents("footer.php");
+	?>
