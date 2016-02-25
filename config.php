@@ -14,3 +14,13 @@ if (mysqli_connect_error()){
 }
 
 ?>
+
+	<!-- Tjecking for user logged in -->
+
+<?php
+session_start();
+if(!isset($_SESSION["isAuthenticated"]) || !$_SESSION["isAuthenticated"]){
+	header("location: /hackathon2016/index.php");
+	exit;
+}
+?>
