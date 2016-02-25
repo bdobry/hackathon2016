@@ -21,19 +21,66 @@
     }
 ?>
 
-    <div class="container">
-                <div class="span10 offset1">
-                    <div class="row">
-                        <h3>Delete a question</h3>
-                    </div>                   
+<?php echo file_get_contents("head.php"); ?>
+<?php echo file_get_contents("header.php");?>
+  
+	
+   <div class="container">
+
+        <!-- Jumbotron Header -->
+        <header class="jumbotron fp-jt">
+            <h1>Edit Quiz</h1>
+          <div class="col-sm-6 col-md-6 text-right">
+              
+                <div class="btn-group inline" role="group">
+                    
+                    <a href="manage.php" class="btn btn-danger">Go back</a>
+                   
+                </div>
+                </div>
+        </header>
+
+        <hr>
+
+        <!--Quiz -->
+        <div class="row">
+        
+            <div class="col-lg-12">
+
+<div class="row">
+    <div class="col-md-offset-2 col-md-8">
+        <h1>Delete question</h1>
+
+
+             
                     <form class="form-horizontal" action="delete.php" method="post">
-                      <input type="hidden" name="id" value="<?php echo $id;?>"/>
-                      <p class="alert alert-error">Are you sure to delete the question ?</p>
+                      <input type="hidden" class="form-control" name="id" value="<?php echo $id;?>"/>
+                      <h3>Are you sure to delete the question ?</h3>
+                      <br>
                       <div class="form-actions">
-                          <button type="submit" class="btn btn-danger">Yes</button>
-                          <a class="btn" href="manage.php">No</a>
+                          <button type="submit" class="btn btn-primary">Yes</button>
+                          <a class="btn btn-warning" href="manage.php">No</a>
                         </div>
                     </form>
-                </div>            
+                        
     </div> <!-- /container -->
   
+   </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Quiz-->
+       
+        <!-- /.row -->
+
+        <hr>
+     </div>
+
+        <!-- Footer -->
+	<?php
+	echo file_get_contents("pagefooter.php");
+	?>
+
+	<?php
+	echo file_get_contents("footer.php");
+	?>
