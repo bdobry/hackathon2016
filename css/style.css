@@ -187,3 +187,12 @@ select option[disabled]:first-child {
   }
 
 }
+
+.question{
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.question-container{
+  margin-top: 20px;
+}
