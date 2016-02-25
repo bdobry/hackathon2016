@@ -1,15 +1,32 @@
 	<?php 
 	echo file_get_contents("head.php");
+    include 'config.php';
 	?>
 	<?php 
 	echo file_get_contents("header.php");
 	?>
 	
-<    <div class="container">
+   <div class="container">
+
+
+
+            <?php
+
+$id=$_GET['id'];
+$sql = "SELECT title, question, id FROM questions where id = '$id'";
+$result = $dbc->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+
+        ?>
+
+
 
         <!-- Jumbotron Header -->
         <header class="jumbotron fp-jt">
-            <h1 class="question-title">Question title here</h1>
+            <h1 class="question-title"><?php echo $row["title"];?> </h1>
         </header>
 
         <hr>
@@ -25,7 +42,25 @@
                 </div>
             </div>
             <div class="well subquestion-container col-xs-10 col-lg-11 inline-block">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae dicta, veritatis natus unde tempora quo ex maxime aliquid rerum ipsum omnis ipsam non laborum deleniti, iste, fugit maiores neque quos?</p>
+      
+
+       <?php     
+
+      
+       echo  $row["question"];
+     /* echo "<div class=\"title\"><a href=\"question-tpl.php?id=$row[id]\"><h1>$row[title]</h1></a></div>";*/
+     
+    }
+} else {
+    echo "0 results";
+}
+
+$dbc->close();
+
+
+?>
+
+
             </div>
             </div>
 
