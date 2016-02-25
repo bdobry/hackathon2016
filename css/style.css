@@ -156,3 +156,11 @@ line-height: 14px;
 select option[disabled]:first-child {
   display: none;
 }
+.avatar-nav{
+  max-width: 34px !important;
+  display: inline-block;
+}
+.inlineb{
+
+  display: inline-block !important;
+}
