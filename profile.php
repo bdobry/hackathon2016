@@ -22,26 +22,26 @@ if(!isset($_SESSION["isAuthenticated"]) || !$_SESSION["isAuthenticated"]){
 
     <hr>
     <div class="col-lg-6">
-        <form action="editProfile.php" method="post" name="editProfileForm">
+        <form action="editProfile.php" method="post" name="editProfileForm" id="editProfileForm">
         <div class="form-group">
             <label for="user">Change username</label>
-            <input type="text" class="form-control" name="user" placeholder="<?php echo $_SESSION["userName"] ?>">
+            <input id="user" type="text" class="form-control" name="user" placeholder="<?php echo $_SESSION["userName"] ?>">
         </div>
         <div class="form-group">
         <label for="email">Change Email</label>
-          <input type="email" class="form-control" id="InputEmail" name="email" placeholder="<?php echo $_SESSION["email"] ?>">
+          <input type="email" class="form-control" id="email" name="email" placeholder="<?php echo $_SESSION["email"] ?>">
         </div>
         <div class="form-group">
             <label for="oldPass">Current Password</label>
-            <input type="password" class="form-control" name="oldPass" placeholder="Current Password">
+            <input id="oldPass" type="password" class="form-control" name="oldPass" placeholder="Current Password">
         </div>
         <div class="form-group">
             <label for="newPass1">New Password</label>
-            <input type="password" class="form-control" name="newPass1" placeholder="New Password">
+            <input id="newPass1" type="password" class="form-control" name="newPass1" placeholder="New Password">
         </div>
         <div class="form-group">
             <label for="newPass2">Repeat New Password</label>
-            <input type="password" class="form-control" name="newPass2" placeholder="Repeat New Password">
+            <input id="newPass2" type="password" class="form-control" name="newPass2" placeholder="Repeat New Password">
         </div>
         <div>
             <p class="alert alert-danger" name="passError" hidden>The New Password field needs to match the Repeat New Password field</p>
