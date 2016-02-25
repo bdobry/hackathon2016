@@ -32,26 +32,24 @@
             
             <div class="question-container col-sm-12">
                
+                        <?php
 
+                        $sql = "SELECT title, question, id FROM questions WHERE category_id='1'";
+                        $result = $dbc->query($sql);
 
-<?php
-
-$sql = "SELECT title, question, id FROM questions";
-$result = $dbc->query($sql);
-
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo '<div class="question">';
-      /* echo "Title: " . $row["title"]. " <br>Question: " . $row["question"]. "<br>";*/
-      echo "<div class=\"title\"><a href=\"question-tpl.php?id=$row[id]\"><h1>$row[title]</h1></a></div>";
-       echo '</div>';
-    }
-} else {
-    echo "0 results";
-}
-$dbc->close();
-?>
+                        if ($result->num_rows > 0) {
+                            // output data of each row
+                            while($row = $result->fetch_assoc()) {
+                                echo '<div class="question">';
+                              /* echo "Title: " . $row["title"]. " <br>Question: " . $row["question"]. "<br>";*/
+                              echo "<div class=\"title\"><a href=\"question-tpl.php?id=$row[id]\"><h1>$row[title]</h1></a></div>";
+                               echo '</div>';
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+                        $dbc->close();
+                        ?>
 
             </div>
 
