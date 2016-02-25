@@ -23,7 +23,7 @@ $wrong_answer2 = ($_POST['wrong_answer2']);
 $wrong_answer3 = ($_POST['wrong_answer3']);
 
 //connect to the database
-require_once('createdb.php');
+require_once('db_conn.php');
 
 //Create the insert query
 $query = "INSERT INTO quiz2
