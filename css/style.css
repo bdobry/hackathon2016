@@ -209,6 +209,11 @@ select option[disabled]:first-child {
     background-size: 100%;
 }
 
+.quizcatbg {
+    background: url('../images/grey-bg.jpg') no-repeat;
+    background-size: 100%;
+}
+
 .designcat{
   color: #FF8A65;
 }
@@ -231,6 +236,13 @@ select option[disabled]:first-child {
 .off-topiccat a {
     color: #4CAF50;
 }
+.quizcatbg {
+	color:#0C6
+}
+.quizcatbg a {
+	color:#0C6;
+}
+
 
 p.votecounter{
     margin-bottom: 0px;
