@@ -219,3 +219,7 @@ select option[disabled]:first-child {
 .off-topiccat{
   color: #4CAF50;
 }
+
+.off-topiccat a {
+    color: #4CAF50;
+}

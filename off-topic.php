@@ -10,7 +10,7 @@
 
         <!-- Jumbotron Header -->
         <header class="jumbotron fp-jt">
-            <h1>Off topic questions</h1>
+            <h1><i class="fa fa-coffee off-topiccat"></i> Off topic questions</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
         </header>
 
@@ -38,7 +38,7 @@
                         if ($result->num_rows > 0) {
                             // output data of each row
                             while($row = $result->fetch_assoc()) {
-                                echo '<div class="question col-md-12">';
+                                echo '<div class="question off-topiccat col-md-12">';
                               /* echo "Title: " . $row["title"]. " <br>Question: " . $row["question"]. "<br>";*/
                               echo "<div class=\"title col-sm-12\"><a href=\"questionpage.php?id=$row[id]\"><h2>$row[title]</h2></a></div>";
                                echo '</div>';
