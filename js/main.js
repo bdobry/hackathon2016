@@ -51,3 +51,35 @@ $(document).ready(function () {
 
 
 });
+
+$(document).ready(function () {
+
+    $('#registerForm').validate({
+        rules: {
+            regUsername: {
+                minlength: 6,
+                required: true
+            },
+                regPass: {
+                minlength: 6,
+                required: true
+            },
+            regEmail: {
+                required: true,
+                email: true
+            }
+
+        },
+
+
+        highlight: function (element) {
+            $(element).closest('.control-group').removeClass('success').addClass('error');
+        },
+        success: function (element) {
+            element.text('Correct').addClass('valid')
+                .closest('.control-group').removeClass('error').addClass('success');
+        }
+    });
+
+
+});

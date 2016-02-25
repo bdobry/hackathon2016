@@ -130,7 +130,7 @@ footer {
 }
 
 .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
-    margin-right: 0px; */
+    margin-right: 0px;
     margin-left: 0px;
 }
 
@@ -243,4 +243,12 @@ p.votecounter{
 .votecounter.minus{
   color: red;
   font-weight: bold;
+}
+
+.error{
+  color: #d9534f;
+}
+
+.valid{
+  color: #5cb85c;
 }
