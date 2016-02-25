@@ -29,7 +29,7 @@
 
             <div class="col-md-4 col-sm-6 feature">
                 <div class="thumbnail">
-					<a href="design.php">
+					<a href="quiz.php">
 						<div class="col-sm-12 categoryiconwrap">
 		                    <i class="fa fa-pencil fa-5x"></i>
 		                </div>
@@ -38,7 +38,7 @@
                         <h3>Design</h3>
                         <p>Anything related to design</p>
                         <p>
-                            <a href="design.php" class="btn btn-success">See questions</a>
+                            <a href="quiz.php" class="btn btn-success">See questions</a>
                         </p>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
 
             <div class="col-md-4 col-sm-6 feature">
                 <div class="thumbnail">
-                <a href="code.php">
+                <a href="quiz2.php">
                     <div class="col-sm-12 categoryiconwrap">
 	                    <i class="fa fa-code fa-5x"></i>
 	                </div>
@@ -55,7 +55,7 @@
                         <h3>Coding</h3>
                         <p>Anything code/programming related</p>
                         <p>
-                            <a href="code.php" class="btn btn-success">See questions</a>
+                            <a href="quiz2.php" class="btn btn-success">See questions</a>
                         </p>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
 
             <div class="col-md-4 col-sm-6 feature">
                 <div class="thumbnail">
-                <a href="off-topic.php">
+                <a href="quiz2.php">
 	                <div class="col-sm-12 categoryiconwrap">
 	                    <i class="fa fa-coffee fa-5x"></i>
 	                </div>
@@ -72,7 +72,7 @@
                         <h3>Off topic</h3>
                         <p>Anything really</p>
                         <p>
-                            <a href="off-topic.php" class="btn btn-success">See questions</a>
+                            <a href="quiz2.php" class="btn btn-success">See questions</a>
                         </p>
                     </div>
                 </div>
