@@ -9,22 +9,7 @@
 }
 
   if(isset($_POST['formSubmit']) == "Submit")
-    {
-    $errorMessage = "";
-    
-    if(empty($_POST['formTitle'])) 
-        {
-      $errorMessage .= "<li>You forgot to enter a title!</li>";
-    }
-    if(empty($_POST['formCategory'])) 
-        {
-      $errorMessage .= "<li>You forgot to select the category!</li>";
-    }
-    if(empty($_POST['formQuestion'])) 
-        {
-      $errorMessage .= "<li>You forgot to enter a question!</li>";
-    }
-  
+  {
 
     $varTitle = $_POST['formTitle'];
     $varCategory = $_POST['formCategory'];
@@ -36,9 +21,9 @@
       
 
       $sql = "INSERT INTO questions (title, category_id, question ) VALUES (".
-              PrepSQL($varTitle) . ", " .
+              $varTitle . ", " .
               $varCategory . ", " .
-              PrepSQL($varQuestion) . ")";
+              $varQuestion . ")";
       $result = $dbc->query($sql);
       
       header("Location: main.php");
@@ -46,30 +31,6 @@
     }
   }
        
-    // function: PrepSQL()
-    // use stripslashes and mysql_real_escape_string PHP functions
-    // to sanitize a string for use in an SQL query
-    //
-    // also puts single quotes around the string
-    //
-    function PrepSQL($value)
-    {
-        // Stripslashes
-        if(get_magic_quotes_gpc()) 
-        {
-            $value = stripslashes($value);
-        }
-
-        // Quote
-        $value = "'" . mysql_real_escape_string($value) . "'";
-
-        return($value);
-    }
-
-
-
-
-
 
 	?>
 	
@@ -86,15 +47,6 @@
 
   <div class="row">
 
-
-
-    <?php
-     if(!empty($errorMessage)) 
-        {
-          echo("<p>There was an error with your form:</p>\n");
-          echo("<ul>" . $errorMessage . "</ul>\n");
-            }
-        ?>
 
 
    <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
