@@ -12,13 +12,22 @@
         <!-- Jumbotron Header -->
         <header class="jumbotron fp-jt">
             <h1>PHP Quiz</h1>
-            <p><a href="manage.php">Edit quiz</a></p>
+          
         </header>
 
         <hr>
 
         <!--Quiz -->
         <div class="row">
+        <div class="col-sm-6 col-md-6 text-right">
+                <span class="inline">Sort by: </span>
+                <div class="btn-group inline" role="group" aria-label="filter">
+                    
+                    <a href="mainquiz.php" class="btn btn-primary">Go back</a>
+                    <a href="manage.php" class="btn btn-danger">Edit quiz</a>
+                   
+                </div>
+                </div>
             <div class="col-lg-12">
               <?php
 
