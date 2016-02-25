@@ -42,7 +42,7 @@
                             while($row = $result->fetch_assoc()) {
                                 echo '<div class="question">';
                               /* echo "Title: " . $row["title"]. " <br>Question: " . $row["question"]. "<br>";*/
-                              echo "<div class=\"title\"><a href=\"questionpage.php?id=$row[id]\"><h1>$row[title]</h1></a></div>";
+                              echo "<div class=\"title col-sm-12\"><a href=\"questionpage.php?id=$row[id]\"><h1>$row[title]</h1></a></div>";
                                echo '</div>';
                             }
                         } else {
