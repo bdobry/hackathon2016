@@ -26,6 +26,9 @@ $(document).ready(function () {
                 minlength: 6,
                 required: false
             }
+            newPass2: {
+            	equalTo: "newPass1"
+            }
         },
         highlight: function (element) {
             $(element).closest('.control-group').removeClass('success').addClass('error');
