@@ -5,17 +5,17 @@
 	echo file_get_contents("header.php");
 	?>
 	
-    <div class="container">
+<div class="container">
 
         <!-- Jumbotron Header -->
-        <header class="jumbotron fp-jt">
-            <h1>Ask question</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-        </header>
+  <header class="jumbotron fp-jt">
+    <h1>Ask question</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+  </header>
 
-        <hr>
+  <hr>
 
-<div class="container">
+
 <div class="row">
   <form role="form" action="" method="post" >
     <div class="col-lg-6">
