@@ -27,7 +27,7 @@
                         <form class="navbar-left navbar-form" action="mainquiz.php">
                         <button  class="btn btn-primary navbar-button">Quiz</button>
                         </form>
-                        <form class="navbar-left navbar-form" action="askquestion.php">
+                        <form class="navbar-left navbar-form" action="rquestion.php">
                         <button  class="btn btn-success navbar-button">Ask question</button>
                         </form>
                         <form class="navbar-left navbar-form" action="logout.php" method="post">
