@@ -12,8 +12,8 @@ echo file_get_contents("header.php");
 
     <!-- Jumbotron Header -->
     <header class="jumbotron fp-jt">
-        <h1> Welcome to Classmate, <?php echo $_SESSION["userName"]; ?></h1>
-        <p>Classmate.dk is here to help you</p>
+        <h1>Who are we?</h1>
+        <p>Classmate.dk is here to help you, and your classmates, with your studies</p>
     </header>
 
     <hr>
