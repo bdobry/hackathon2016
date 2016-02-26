@@ -16,7 +16,8 @@ $(document).ready(function () {
         rules: {
             user: {
                 minlength: 5,
-                required: false
+                required: false,
+                remote: "check-new-username.php"
             },
             email: {
                 required: false,
@@ -36,12 +37,17 @@ $(document).ready(function () {
         },
 
 		messages: {
-		    oldPass: {
-		      remote: "Your old password is incorrect"
-		    }
+		    user: {
+		      remote: "Username is already taken"
+		    },
+            oldPass: {
+                remote: "Your old password is incorrect"
+            }
 		  },
         highlight: function (element) {
             $(element).closest('.control-group').removeClass('success').addClass('error');
+            $(element).removeClass('success').addClass('error');
+            $(element).closest('.form-control').addClass('error').removeClass('valid');
         },
         success: function (element) {
             element.text('Correct').addClass('valid')
@@ -58,12 +64,12 @@ $(document).ready(function () {
         rules: {
             regUsername: {
                 minlength: 6,
-                required: true
+                required: true,
+                remote: "check-new-username.php"
             },
                 regPass: {
                 minlength: 6,
-                required: true,
-                remote: "check-new-username.php"
+                required: true
             },
             regEmail: {
                 required: true,
@@ -72,9 +78,15 @@ $(document).ready(function () {
 
         },
 
-
+        messages: {
+            regUsername: {
+                remote: "Username is already taken"
+            }
+        },
         highlight: function (element) {
             $(element).closest('.control-group').removeClass('success').addClass('error');
+            $(element).removeClass('success').addClass('error');
+            $(element).closest('.form-control').addClass('error').removeClass('valid');
         },
         success: function (element) {
             element.text('Correct').addClass('valid')
