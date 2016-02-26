@@ -1,15 +1,6 @@
 <?php
 include 'config.php';
 
-    session_start();
-    if(!isset($_SESSION["isAuthenticated"]) || !$_SESSION["isAuthenticated"]){
-        header("location: /hackathon2016/index.php");
-        exit;
-    }
-
-
-
-
 
 echo file_get_contents("head.php");
 
