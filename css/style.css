@@ -416,3 +416,10 @@ input[type="radio"] .styled:checked + label::after {
     padding-bottom: 7px !important;
     padding-left: 0px !important;
 }
+
+.replies{
+  margin: 30px 0px;
+}
+.reply{
+  margin-top: 20px;
+}

@@ -54,8 +54,9 @@ echo file_get_contents("header.php");
 
                 echo  $row["question"];
                 echo  "<br>";
+                echo "Author: ";
                 echo  $row["author"];
-                echo "&nbsp;";
+                echo " Date: ";
                 echo  $row["date"];
                 /* echo "<div class=\"title\"><a href=\"question-tpl.php?id=$row[id]\"><h1>$row[title]</h1></a></div>";*/
 
@@ -72,9 +73,9 @@ echo file_get_contents("header.php");
             </div>
         </div>
 
-        <h3><i class="fa fa-chevron-circle-down"></i> Replies:</h3>
         <div class="replies col-sm-12">
-            <div class="col-md-12 bg-info reply">
+        <h3><i class="fa fa-chevron-circle-down"></i> Replies:</h3>
+            
                 <p>
                     <?php
                     $id = $_GET['id'];
@@ -82,11 +83,12 @@ echo file_get_contents("header.php");
                     $result = $dbc->query($sql);
                     if($result){
                         while($row = $result->fetch_assoc()){
-                            echo '<div class="question col-md-12" style="margin-top: 5px;">';
+                            echo '<div class="col-md-12 bg-info reply">';
                             echo $row["text"];
                             echo "<br>";
+                            echo "Author: ";
                             echo $row["author"];
-                            echo "&nbsp;";
+                            echo " Date: ";
                             echo $row["date"];
                             echo '</div>';
 
@@ -97,7 +99,7 @@ echo file_get_contents("header.php");
                     }
                     ?>
                 </p>
-            </div>
+            
         </div>
         <div class="add-reply col-md-12">
             <h3>Answer:</h3>
