@@ -430,12 +430,10 @@ input[type="radio"] .styled:checked + label::after {
     padding: 10px;
     background-color: rgba(51, 51, 51, 0.08);
 }
-}
 
 .replymeta {
         color: #aaa;
     margin-top: 20px;
     padding: 10px;
     background-color: rgba(51, 51, 51, 0.08);
-}
 }
