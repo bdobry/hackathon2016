@@ -17,7 +17,7 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <li>
-                        <a href="#">About</a>
+                        <a href="about.php">About</a>
                     </li>
                     <li>
                         <a class="inlineb" href="profile.php">My Account</a>
