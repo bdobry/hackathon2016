@@ -29,27 +29,44 @@
                     <a href="#" class="btn btn-success">Most replies</a>
                 </div>
                 </div>
-            <div class="question-container col-sm-12">
-                   <?php
+        <div class="question-container col-sm-12">
 
-                        $sql = "SELECT title, question, id FROM questions WHERE category_id='3'";
-                        $result = $dbc->query($sql);
+            <?php
 
-                        if ($result->num_rows > 0) {
-                            // output data of each row
-                            while($row = $result->fetch_assoc()) {
-                                echo '<div class="question off-topiccat col-md-12">';
-                              /* echo "Title: " . $row["title"]. " <br>Question: " . $row["question"]. "<br>";*/
-                              echo "<div class=\"title col-sm-12\"><a href=\"questionpage.php?id=$row[id]\"><h2>$row[title]</h2></a></div>";
-                               echo '</div>';
-                            }
-                        } else {
-                            echo "0 results";
-                        }
-                        $dbc->close();
-                        ?>
+            $sql = "SELECT `id`,`title`, `category`, `question`, `author`, `date` FROM r_question WHERE category ='2' ORDER BY `date`";
+            $result = $dbc->query($sql);
+            if($result){
+                while($row = $result->fetch_assoc()){
+                    echo '<div class="question designcat col-md-12">';
+                    echo "<div class=\"title col-sm-12\"><a href=\"ranswer.php?id=$row[id]\"><h3>$row[title]</h3></a></div>";
+                    echo $row["title"];
+                    echo $row["question"];
+                    echo $row["author"];
+                    echo $row["date"];
+                    echo '</div>';
 
-            </div>
+                }
+
+
+            }
+
+
+            /*
+            if ($result->num_rows > 0) {
+                // output data of each row
+                while($row = $result->fetch_assoc()) {
+                    echo '<div class="question codecat col-md-12">';
+                  /* echo "Title: " . $row["title"]. " <br>Question: " . $row["question"]. "<br>";*/
+            /* echo "<div class=\"title col-sm-12\"><a href=\"rquestion.php?id=$row[id]\"><h2>$row[title]</h2></a></div>";
+              echo '</div>';
+           }
+       } else {
+           echo "0 results";
+       }*/
+            $dbc->close();
+            ?>
+        </div>
+
 
         
 	<?php
