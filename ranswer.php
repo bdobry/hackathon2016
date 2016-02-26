@@ -53,11 +53,12 @@ echo file_get_contents("header.php");
                 <?php
 
                 echo  $row["question"];
-                echo  "<br>";
+                echo  '<br><div class="questionmeta">';
                 echo "Author: ";
                 echo  $row["author"];
                 echo " Date: ";
                 echo  $row["date"];
+                echo "</div>";
                 /* echo "<div class=\"title\"><a href=\"question-tpl.php?id=$row[id]\"><h1>$row[title]</h1></a></div>";*/
 
                 }
@@ -85,12 +86,12 @@ echo file_get_contents("header.php");
                         while($row = $result->fetch_assoc()){
                             echo '<div class="col-md-12 bg-info reply">';
                             echo $row["text"];
-                            echo "<br>";
+                            echo '<br><div class="replymeta">';
                             echo "Author: ";
                             echo $row["author"];
                             echo " Date: ";
                             echo $row["date"];
-                            echo '</div>';
+                            echo '</div></div>';
 
 
                         }
