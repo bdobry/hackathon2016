@@ -38,13 +38,14 @@
             $result = $dbc->query($sql);
             if($result){
                 while($row = $result->fetch_assoc()){
-                    echo '<div class="question designcat col-md-12">';
-                    echo "<div class=\"title col-sm-12\"><a href=\"ranswer.php?id=$row[id]\"><h3>$row[title]</h3></a></div>";
-                    echo $row["title"];
-                    echo $row["question"];
+                    echo '<div class="question  col-md-12">';
+                    echo "<div class=\"title designcat\"><a href=\"ranswer.php?id=$row[id]\"><h3>$row[title]</h3></a></div>";                    
+                    echo "Author: ";
                     echo $row["author"];
+                    echo " Date: ";
                     echo $row["date"];
                     echo '</div>';
+
 
                 }
 
