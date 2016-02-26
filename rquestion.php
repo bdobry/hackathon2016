@@ -21,9 +21,7 @@
             ];
 header("location: ". $pages[$category]);
 
-} else {
-            echo "Something went wrong! please try again.";
-        }
+} 
 
 
 echo file_get_contents("head.php");
