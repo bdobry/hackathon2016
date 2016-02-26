@@ -86,6 +86,7 @@ echo file_get_contents("header.php");
                             echo $row["text"];
                             echo "<br>";
                             echo $row["author"];
+                            echo "&nbsp;";
                             echo $row["date"];
                             echo '</div>';
 
