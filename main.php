@@ -20,7 +20,7 @@
         <!-- Jumbotron Header -->
         <header class="jumbotron fp-jt">
             <h1> Welcome to Classmate, <?php echo $_SESSION["userName"]; ?></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+            <p>Here, you can get help from all EAL students, so check out questions or add your own one.</p>
         </header>
 
         <hr>
