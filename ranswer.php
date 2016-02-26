@@ -74,7 +74,7 @@ echo file_get_contents("header.php");
 
         <h3><i class="fa fa-chevron-circle-down"></i> Replies:</h3>
         <div class="replies col-sm-12">
-            <div class="bg-info reply">
+            <div class="col-md-12 bg-info reply">
                 <p>
                     <?php
                     $id = $_GET['id'];
@@ -82,7 +82,7 @@ echo file_get_contents("header.php");
                     $result = $dbc->query($sql);
                     if($result){
                         while($row = $result->fetch_assoc()){
-                            echo '<div class="question designcat col-md-12" style="margin-top: 5px;">';
+                            echo '<div class="question col-md-12" style="margin-top: 5px;">';
                             echo $row["text"];
                             echo "<br>";
                             echo $row["author"];
