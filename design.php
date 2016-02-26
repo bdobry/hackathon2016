@@ -34,7 +34,7 @@
 
             <?php
 
-            $sql = "SELECT `id`,`title`, `category`, `question`, `author`, `date` FROM r_question WHERE category ='2' ORDER BY `date`";
+            $sql = "SELECT `id`,`title`, `category`, `question`, `author`, `date` FROM r_question WHERE category ='1' ORDER BY `date`";
             $result = $dbc->query($sql);
             if($result){
                 while($row = $result->fetch_assoc()){
