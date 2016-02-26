@@ -432,8 +432,8 @@ input[type="radio"] .styled:checked + label::after {
 }
 
 .replymeta {
-        color: #aaa;
+    color: #007BB9;
     margin-top: 20px;
     padding: 10px;
-    background-color: rgba(51, 51, 51, 0.08);
+    background-color: rgba(1, 170, 255, 0.21);
 }
