@@ -4,7 +4,9 @@
         header("location: /hackathon2016/index.php");
         exit;
     }
+die("hest");
 ?>
+
 
 	<?php 
 	echo file_get_contents("head.php");
