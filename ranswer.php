@@ -107,18 +107,6 @@ echo file_get_contents("header.php");
 
             <form action="answer.php" method="post">
                 <input type="hidden" name="q_id" value="<?php echo $_GET["id"]; ?>">
-                <div class="form-group">
-                <label for="formDate">Date</label>
-                <div class="input-group">
-                    <input type="date" class="form-control" name="formDate" id="InputName" placeholder="Enter Date" required>
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-            </div>
-            <div class="form-group">
-                <label for="formAuthor">Author</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" name="formAuthor" id="InputName" placeholder="Enter Author" required>
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-            </div>
 
                 <div class="form-group">
                     <textarea class="form-control" name="formText" rows="5" id="comment" placeholder="Write your answer"></textarea>

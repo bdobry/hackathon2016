@@ -8,8 +8,8 @@ if(isset($_POST['formSubmit'])){
 
 
     $text = $_POST['formText'];
-    $author= $_POST['formAuthor'];
-    $date= $_POST['formDate'];
+    $author= $_SESSION['userName'];
+    $date= date('Y-m-d');
     $q_id= $_POST['q_id'];
     $sql = "INSERT INTO `r_answer`(`text`, `q_id`, `author`, `date`) VALUES ('$text', '$q_id', '$author','$date')";
 
