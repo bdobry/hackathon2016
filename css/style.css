@@ -257,9 +257,6 @@ p.votecounter{
   font-weight: bold;
 }
 
-<<<<<<< HEAD
-
-
 /*Quiz style*/
 
 ul {
@@ -400,7 +397,7 @@ input[type="checkbox"] .styled:checked + label::after,
 input[type="radio"] .styled:checked + label::after {
   color: #fff;
 }
-=======
+
 .error{
   color: #d9534f;
 }
