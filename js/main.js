@@ -62,7 +62,8 @@ $(document).ready(function () {
             },
                 regPass: {
                 minlength: 6,
-                required: true
+                required: true,
+                remote: "check-new-username.php"
             },
             regEmail: {
                 required: true,
