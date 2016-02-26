@@ -9,8 +9,8 @@
             $title = $_POST['formTitle'];
             $category = $_POST['formCategory'];
             $question = $_POST['formQuestion'];
-            $author= $_POST['formAuthor'];
-            $date= $_POST['formDate'];
+            $author= $_SESSION['userName'];
+            $date= date('Y-m-d');
             $sql = "INSERT INTO `r_question`(`title`, `category`, `question`, `author`, `date`) VALUES ('$title','$category','$question','$author','$date')";
 
             $result = $dbc->query($sql);
@@ -73,18 +73,6 @@ echo file_get_contents("header.php");
                     <label for="formQuestion">Question</label>
                     <div class="input-group">
                         <textarea name="formQuestion" id="InputMessage" class="form-control" rows="5" placeholder="Write your question here" required></textarea>
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-                </div>
-                <div class="form-group">
-                    <label for="formAuthor">Author</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" name="formAuthor" id="InputName" placeholder="Enter Author" required>
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-                </div>
-                <div class="form-group">
-                    <label for="formDate">Date</label>
-                    <div class="input-group">
-                        <input type="date" class="form-control" name="formDate" id="InputName" placeholder="Enter Date" required>
                         <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
                 </div>
 
